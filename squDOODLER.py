@@ -31,7 +31,6 @@ class Box:
   def show(self):
     try: self.scr.addch(self.y,self.x,43)
     except curses.error: pass
-    self.scr.refresh()
   
   def move(self,side):
     if side=='up':  self.y-=1
